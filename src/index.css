@@ -21,8 +21,8 @@
     --primary-light: 217 85% 50%;
     --primary-dark: 217 85% 30%;
 
-    /* Header black background */
-    --header-bg: 0 0% 8%;
+    /* Header primary blue background */
+    --header-bg: 217 85% 40%;
     --header-foreground: 0 0% 100%;
 
     --secondary: 217 25% 95%;
