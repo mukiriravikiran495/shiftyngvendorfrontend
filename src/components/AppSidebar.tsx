@@ -11,6 +11,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import { 
+  LayoutDashboard,
   Package, 
   User, 
   CreditCard, 
@@ -21,6 +22,7 @@ import {
 } from "lucide-react";
 
 const menuItems = [
+  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "My Bookings", url: "/my-bookings", icon: Package },
   { title: "Profile", url: "/profile", icon: User },
   { title: "Bank Account", url: "/bank-account", icon: CreditCard },
