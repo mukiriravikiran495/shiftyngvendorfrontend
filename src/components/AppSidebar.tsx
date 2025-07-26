@@ -49,8 +49,8 @@ export function AppSidebar() {
         </div>
         
         <SidebarGroup>
-          <SidebarGroupLabel className="text-lg font-bold text-primary px-6">
-            Menu
+          <SidebarGroupLabel className="text-3xl font-bold text-primary px-2  mb-6" style={{ fontFamily: 'Arial, sans-serif' }} >
+            Shiftyng 
           </SidebarGroupLabel>
           
           <SidebarGroupContent>
@@ -60,7 +60,7 @@ export function AppSidebar() {
                   <SidebarMenuButton 
                     asChild
                     className={`
-                      h-12 px-4 rounded-xl transition-all duration-200 
+                      h-12 px-4 rounded-lg transition-all duration-200 
                       ${isActive(item.url) 
                         ? "bg-primary text-primary-foreground shadow-md" 
                         : "hover:bg-muted text-muted-foreground hover:text-foreground"
@@ -80,9 +80,9 @@ export function AppSidebar() {
               <SidebarMenuItem>
                 <SidebarMenuButton 
                   asChild
-                  className="h-12 px-4 rounded-xl transition-all duration-200 hover:bg-destructive/10 text-destructive hover:text-destructive mt-4"
+                  className="h-12 px-4 rounded-lg transition-all duration-200 hover:bg-destructive/10 text-destructive hover:text-destructive mt-4"
                 >
-                  <button onClick={handleLogout} className="flex items-center gap-3 w-full">
+                  <button onClick={handleLogout} className="flex items-center gap-3 w-full rounded-lg">
                     <LogOut className="h-5 w-5 shrink-0" />
                     <span className="font-medium">Logout</span>
                     <ChevronRight className="h-4 w-4 ml-auto opacity-50" />
