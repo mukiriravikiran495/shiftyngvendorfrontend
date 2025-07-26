@@ -119,7 +119,7 @@ const DocumentUpload = () => {
                   <CardTitle className="text-xl">{doc.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="border-2 border-dashed border-muted rounded-xl p-6 text-center">
+                  <div className="relative border-2 border-dashed border-muted rounded-xl p-6 text-center cursor-pointer hover:border-primary transition-colors">
                     {doc.file ? (
                       <div className="space-y-3">
                         <div className="flex justify-center">
@@ -127,6 +127,24 @@ const DocumentUpload = () => {
                         </div>
                         <p className="text-sm font-medium text-success">Uploaded Successfully</p>
                         <p className="text-xs text-muted-foreground truncate">{doc.file.name}</p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            // Reset the document to allow re-upload
+                            setDocuments(prev =>
+                              prev.map(d =>
+                                d.type === doc.type
+                                  ? { ...d, file: null, preview: null }
+                                  : d
+                              )
+                            );
+                          }}
+                          className="mt-2"
+                        >
+                          Change File
+                        </Button>
                       </div>
                     ) : (
                       <div className="space-y-3">
@@ -150,12 +168,15 @@ const DocumentUpload = () => {
                               description: "Please upload a file smaller than 5MB",
                               variant: "destructive",
                             });
+                            e.target.value = ''; // Reset input
                             return;
                           }
                           handleFileUpload(doc.type, file);
+                          e.target.value = ''; // Reset input for next upload
                         }
                       }}
                       className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                      style={{ display: doc.file ? 'none' : 'block' }}
                     />
                   </div>
 
