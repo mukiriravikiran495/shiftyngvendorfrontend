@@ -10,6 +10,7 @@ import DocumentUpload from "./pages/DocumentUpload";
 import Dashboard from "./pages/Dashboard";
 import MyBookings from "./pages/MyBookings";
 import NotFound from "./pages/NotFound";
+import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
@@ -20,7 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/otp-verification" element={<OtpVerification />} />
           <Route path="/registration" element={<Registration />} />
