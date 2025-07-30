@@ -55,7 +55,7 @@ const Index = () => {
           <h1 className="text-4xl font-bold " style={{ fontFamily: 'Arial, sans-serif' }}>Shiftyng</h1>
           <Button
             onClick={() => navigate("/login")}
-            className="text-lg px-6 py-3 w-80 h-16"
+            className="text-lg px-6 py-3 w-80 h-16 "
           >
             Login to Become a Partner
           </Button>

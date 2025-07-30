@@ -24,6 +24,8 @@ import {
 const menuItems = [
   { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "My Bookings", url: "/my-bookings", icon: Package },
+  { title: "My Earnings", url: "/my-earnings", icon: Package },
+  { title: "Transactions", url: "/transactions", icon: Package },
   { title: "Profile", url: "/profile", icon: User },
   { title: "Bank Account", url: "/bank-account", icon: CreditCard },
   { title: "FAQ", url: "/faq", icon: HelpCircle },
@@ -45,11 +47,11 @@ export function AppSidebar() {
     <Sidebar className="border-r-2" collapsible="icon">
       <SidebarContent className="bg-card">
         <div className="p-4">
-          <SidebarTrigger className="mb-4" />
+          <SidebarTrigger className="mb-2" />
         </div>
         
         <SidebarGroup>
-          <SidebarGroupLabel className="text-3xl font-bold text-primary px-2  mb-6" style={{ fontFamily: 'Arial, sans-serif' }} >
+          <SidebarGroupLabel className="text-3xl font-bold text-primary px-2  mb-2" style={{ fontFamily: 'Arial, sans-serif' }} >
             Shiftyng 
           </SidebarGroupLabel>
           

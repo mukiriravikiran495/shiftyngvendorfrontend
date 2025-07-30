@@ -20,11 +20,11 @@ const Login = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <div className="flex items-center justify-center min-h-[calc(100vh-4rem)] p-6">
+      <div className="flex items-center justify-center min-h-[calc(100vh-4rem)] p-4">
         <div className="w-full max-w-md space-y-8">
           <div className="text-center space-y-2">
             <h2 className="text-3xl font-bold text-foreground">
-              What's your phone number or email?
+              Become Partner with Shiftyng
             </h2>
           </div>
 

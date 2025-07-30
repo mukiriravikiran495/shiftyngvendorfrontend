@@ -119,28 +119,28 @@ const Dashboard = () => {
 
               <Card className="hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-primary">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-lg font-medium">Total Earnings</CardTitle>
+                  <CardTitle className="text-lg font-medium">My Balance</CardTitle>
                   <div className="p-2 bg-success/10 rounded-full">
                     <TrendingUp className="h-5 w-5 text-success" />
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-success">₹8,45,200</div>
+                  <div className="text-3xl font-bold text-success text-[#BA1C1C]">₹-354</div>
                   <p className="text-sm text-muted-foreground flex items-center gap-1 mt-2">
-                    All time earnings
+                    Recharge your Wallet
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="hover:shadow-lg transition-all duration-300 cursor-pointer border-2 hover:border-primary">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-lg font-medium">Month Earnings</CardTitle>
+                  <CardTitle className="text-lg font-medium">Today Earnings</CardTitle>
                   <div className="p-2 bg-warning/10 rounded-full">
                     <Calendar className="h-5 w-5 text-warning" />
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-warning">₹67,800</div>
+                  <div className="text-3xl font-bold text-warning">₹27,800</div>
                   <p className="text-sm text-muted-foreground flex items-center gap-1 mt-2">
                     January 2024
                   </p>
